@@ -7,12 +7,12 @@
     ![open](./img/open.png)</br>
    2. Installera **GitHub Desktop** och logga in. </br>![alt](./img/download.png) 
    3. Gör samma igen så du får upp den här dialogen: ![alt](./img/clone.png)
-4. Öppna **Visual Studio 2019** och välj **Create Project** ![alt](img/create.png)
+4. Öppna **Visual Studio 2022** och välj **Create Project** ![alt](img/create.png)
 5. Sök på **"Console"** och filtrera på **"C#"** och välj **"Console Application"**</br> ![new2](./img/newProj2.png)
 6. Tryck på **"Next"**
 7.  I nästa dialog sätt ett **"Project name"** och säkerställ att det hamnar på rätt ställe som bilden visar</br> ![new3](./img/new3.png)
 8.  Tryck på **"Next"**
-9.  I nästa dialog välj .Net Core 5.0 och tryck på **"Create"**
+9.  I nästa dialog välj .Net 6.0 och tryck på **"Create"**
 10. Du bör nu ha ett projekt som ser ut såhär:</br> ![helloWorld](./img/helloWorld.png)
 11. Oroa dig inte om du inte förstår vad allt är. Vi kommer att gå igenom vad saker är i sinom tid.
 12. Du kan nu testa att köra ditt första(?) program genom att trycka på **"Run"**</br> ![run](./img/run.png)
