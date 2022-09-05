@@ -24,4 +24,4 @@ Kursrepo för Programmering C# .NET22.
 TBD
 
 ## Labbar
-TBD
+[Labb 1](/.assets/Labb1)
