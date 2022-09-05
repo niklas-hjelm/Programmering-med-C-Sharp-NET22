@@ -46,3 +46,9 @@ j
 
 16.	Gör om uppgift 6 så man kan mata in allt på en rad (första talet, operator, andra talet). Ignorera inmatade mellanslag i strängen. Om man t.ex. matar in strängen 
 “34 - 14”, så ska programmet skriva ut “= 20”.
+
+17.	Gör ett program som ber användaren mata in en text. Be sedan användaren mata in en sträng som är en del av den första texten. Skriv ut hela texten med den del man angav markerad i en annan färg. Ex. Användare matar in “abcdefghijklmnopqrstuvxyz”, och sedan “defg”. Programmet ska då skriva ut:
+abcdefghijklmnopqrstuvxyz
+
+18.	Be användaren mata in en mening. Skriv ut det genomsnittliga antalet bokstäver i orden.
+
