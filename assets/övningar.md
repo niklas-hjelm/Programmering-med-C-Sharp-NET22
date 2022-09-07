@@ -52,3 +52,31 @@ abcdefghijklmnopqrstuvxyz
 
 18.	Be användaren mata in en mening. Skriv ut det genomsnittliga antalet bokstäver i orden.
 
+19.	Skriv en metod DrawBox(int width, int height)
+När man anropar metoden ska den tömma konsolen och skriva ut en rektangel där de yttre tecknen består av ‘#’ och de inre av ‘-’
+Exempel: DrawBox(7, 4);
+#######
+#- - - - -#
+#- - - - -#
+#######
+
+20.	Använd DrawBox-metoden i föregående uppgift för att rita en box. Placera sedan ett @ i mitten av boxen. Om man använder piltangenterna ska man kunna flytta runt @. 
+När den kommer till kanten av boxen så ska den inte kunna gå längre åt det hållet.
+Hint: För att flytta @ behöver du skriva ‘-’ på dess tidigare position och ‘@’ på den nya positionen. Spara bredd och höjd på boxen så du vet när den ska stanna.
+
+21.	Skriv om DrawBox så den istället returnerar en 2D-array av char med tecknen som den tidigare skrev ut på displayen. Man ska också kunna mata in en tredje parameter för antal slumpade ‘#’. Om man anger t.ex 5 så ska 5 stycken extra ‘#’ slumpas ut på random ställen inne i boxen. 
+
+Skriv sedan en annan metod som tar och ritar ut arrayen på skärmen. Fixa så man kan flytta runt @ med piltangenterna. Jämför positionen mot arrayen och gör så man inte kan gå på någon ‘#’.
+
+Extra utmaning: Gör en “orm” av ‘@’. När man flyttar positionen på @ så följer (t.ex) 5 andra @ efter i samma spår som man förflyttat sig.
+
+Extra utmaning 2: I det klassiska spelet “masken” (snake) förflyttar sig en mask i jämna tidsintervall i den riktning spelaren senast angav med piltangenterna. Någonstans på banan finns ett äpple masken ska äta. Det gäller för spelaren att ta sig dit utan att krocka med något hinder, eller sin egen svans. När man tar äpplet blir masken längre och ett nytt äpple dyker upp på slumpvis vald plats på banan.
+
+Implementera din egen version av spelet.
+Hint: Kolla upp Console.KeyAvailable och Thread.Sleep()
+
+Förslag: När du fått en första version av spelet att fungera, lägg till flera banor genom att hårdkoda in olika banlayout i olika 2D-arrayer. När man tagit ett visst antal äpplen på en bana så kommer man vidare till nästa.
+
+22.	Skriv en funktion som kan ta ett godtyckligt antal strängar som parametrar och som returnerar den längsta av dem.
+
+23.	Skapa en metoden int[] IndexOfAll(string text, char c) som söker igenom strängen text och returnerar en int[] med index till alla förekomster av c i text.
