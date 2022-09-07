@@ -25,10 +25,11 @@ Exempel: programmet har det hemliga talet 27. Användaren gissar på 50. Program
     **Extra utmaning 2:** skriv ett sten-sax-påse spel. Användaren skriver in “sten”, “sax” eller “påse”. Dators val slumpas med Random. Skriv sedan ut vad datorn valde, och vem som vann omgången. Lägg det hela i en loop så spelet fortsätter tills man matar in en tom sträng (trycker enter utan att skriva något). Skriv även ut poäng.
     
 10.	Be användaren mata in en sträng. Skriv ut varje tecken i strängen på en egen rad.
-Ex: Hej =>
-H
-e
-j
+Ex: 
+    Hej => <br>
+    H <br>
+    e <br>
+    j <br>
 
 11.	Skapa ett program med en array som innehåller strängarna “noll”, “ett”, “två”, “tre”, “fyra”, “fem”, “sex”, “sju”, “åtta”, “nio”. Be sedan användaren att mata in en siffra. Använd arrayen för att skriva ut siffrans ord. Ex. Inmatning “3” => “tre”.
 
@@ -54,11 +55,12 @@ abcdefghijklmnopqrstuvxyz
 
 19.	Skriv en metod DrawBox(int width, int height)
 När man anropar metoden ska den tömma konsolen och skriva ut en rektangel där de yttre tecknen består av ‘#’ och de inre av ‘-’
-Exempel: DrawBox(7, 4);
-#######
-#- - - - -#
-#- - - - -#
-#######
+Exempel: <br>
+DrawBox(7, 4);<br>
+#######<br>
+#- - - - -#<br>
+#- - - - -#<br>
+#######<br>
 
 20.	Använd DrawBox-metoden i föregående uppgift för att rita en box. Placera sedan ett @ i mitten av boxen. Om man använder piltangenterna ska man kunna flytta runt @. 
 När den kommer till kanten av boxen så ska den inte kunna gå längre åt det hållet.
