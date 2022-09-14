@@ -81,4 +81,88 @@ Hint: Kolla upp Console.KeyAvailable och Thread.Sleep()
 
 22.	Skriv en funktion som kan ta ett godtyckligt antal strängar som parametrar och som returnerar den längsta av dem.
 
-23.	Skapa en metoden int[] IndexOfAll(string text, char c) som söker igenom strängen text och returnerar en int[] med index till alla förekomster av c i text.
+23.	Skapa en metod int[] IndexOfAll(string text, char c) som söker igenom strängen text och returnerar en int[] med index till alla förekomster av c i text.
+24.	Skriv ett program som skriver ut följande rektanglar på konsolen med hjälp av loopar:
+
+    a.</br>
+    ```#-------```</br>
+    ```-#------```</br>
+    ```--#-----```</br>
+    ```---#----```</br>
+    b.</br>
+    ```#---#---```</br>
+    ```-#---#--```</br>
+    ```--#---#-```</br>
+    ```---#---#```</br>
+    c.</br>
+    ```##------```</br>
+    ```--##----```</br>
+    ```----##--```</br>
+    ```------##```</br>
+    d.</br>
+    ```--#--#--```</br>
+    ```--#--#--```</br>
+    ```########```</br>
+    ```--#--#--```</br>
+    e.</br>
+    ```#---#---```</br>
+    ```-#-#----```</br>
+    ```--#-----```</br>
+    ```-#-#----```</br>
+    f.</br>
+    ```#-#-```</br>
+    ```-#-#```</br>
+    ```#-#-```</br>
+    ```-#-#```</br>
+    g.</br>
+    ```###---```</br>
+    ```###---```</br>
+    ```###---```</br>
+    ```------```</br>    
+    h. </br>
+    ```--#--##```</br>
+    ```---#-##```</br>
+    ```----#--```</br>
+    ```-----#-```</br>
+    i. </br>
+    ```--#--```</br>
+    ```-----```</br>
+    ```--#--```</br>
+    ```--#--```</br>
+    j. </br>
+    ```#---#```</br>
+    ```-#-#-```</br>
+    ```--o--```</br>
+    ```-#-#-```</br>
+    ```#---#```</br>
+    k. </br>
+    ```##--##--##--##--```</br>
+    ```##--##--##--##--```</br>
+    ```wwwwww~~~~~~~~~~```</br>
+    ```################```</br>
+
+ 25. Skriv en ny klass som motsvarar en bil. Den ska ha privata fields för modell, pris och färg. Skapa publika properties för att hämta eller ändra värdet på varje field.
+
+Skriv en konstruktor till bilklassen som inte tar några parametrar. Skriv en till konstruktor som tar en parameter för varje property som klassen har. Hur kan man styra vilken konstruktor som anropas när man skapar ett objekt av klassen?
+
+Skriv en metod till bilklassen med namnet HalfPrice. När den anropas ska priset på bilen sänkas till hälften.
+
+26.	Skapa en klass som kan användas som stegräknare. Den ska ha en property Steps som bara går att läsa; en metod Step() som räknar upp Steps med 1 varje gång man anropar den; och en metod Reset() som nollställer räknaren.
+
+    Instantiera klassen och skriv en loop som motsvarar att man går 1000 steg. Skriv ut värdet på Steps.
+
+27.	Skapa en en klass som har en property “red” och en property “blue”. Båda ska vara en float och kunna ha ett värde mellan 0.0 och 100.0  men de ska vara “sammankopplade” på så vis att värdena tillsammans alltid är 100.0 d.v.s om man t.ex. sätter “blue” till 8.5 och sedan läser av “red” så ska den returnera 91.5
+
+28.	Skapa klassen “Person”, med properties “FirstName”, “LastName” och “Name”. Om man ändrar någon av dem, så ska man få ut rätt värden när man läser av de andra. Använd en konstruktor som tar parametrar “firstName” och “lastName” när man instansierar objekten. (I en första enklare version så kan Name vara read-only).
+Ex1. Person p = new Person(“Anna”, “Berg”); //  => p.Name == “Anna Berg”
+Ex2. p.Name = “Per Lind”; // => p.FirstName == “Per”, p.LastName == “Lind”
+
+29.	Skriv en klass som representerar en bil. Varje bil ska kunna ha en färg som representeras av en enum (det ska finna minst 5 olika färger på bilar), samt en längd. När man instansierar en bil så ska den få en random färg, och en random längd (mellan 3 och 5 meter). Instansiera 1000 bilar och spara i en array. Skriv sedan ut den sammanlagda längden av alla gröna bilar.
+
+30.	Gör en ny version av sten-sax-påse. Varje spelare ska representeras av ett “Player”-objekt. Man ska kunna anropa en metod på objekten som returnerar en enum med ett (random) av tre värden (sten, sax, påse). Objekten (klassen) ska ha en konstruktor som tar namn på spelaren, samt en x-, och y-koordinat som representerar ett ställe på skärmen där spelarens namn och poäng skrivs ut. Det ska finnas en property för poäng som automatisk uppdaterar spelarens poäng på den (x/y) positionen på skärmen varje gång man ändrar värdet på propertyn.
+
+    Ex: På översta raden längst till vänster skrivs “Computer: 0”. Varje gång man uppdaterar poängen (t.ex computer.Score++;) så uppdateras poängen automatiskt på den positionen. Likadant för den andra spelaren.
+
+    Dessutom ska det finnas en statisk metod på klassen som tar två enum (sten, sax, påse) och returnerar en ny enum (win, lose, draw) som säger om den första parametern man skickar in vinner över den andra (eller om det blir lika).
+
+    Hint: Använd Console.CursorLeft och Console.CursorTop. Spara den tidigare positionen innan du ändrar; gör uppdateringen, och hoppa tillbaks.
