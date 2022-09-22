@@ -21,7 +21,7 @@ Kursrepo för Programmering C# .NET22.
 ### [Vecka 45](./assets/V45.md) Buffert och Tenta
 
 ## Extra övning
-TBD
+[Övningsuppgifter](./assets/%C3%B6vningar.md)
 
 ## Labbar
 [Labb 1](./assets/Labb%201.md)
