@@ -4,7 +4,7 @@ Klona följande repo: [TextEditor](https://github.com/niklas-hjelm/TextEditorOvn
 
 Detta är en väldigt simpel text-editor som nyttjar kontrollen RichTextBox för att låta användaren skriva formatterad text.
 
-I applikationen finns "Open"- och "Save"-funktionalitet som nyttjar något som heter Commands. Commands är ett sätt att hantera logik baserat på händelser, likt events men  istället för att skickas till alla som lyssnar så kör Commands en angiven metod. För Save och Open nyttjar vi inbyggda kommandon som ger oss kortkommandon "Ctrl+S" och "Ctrl+O" för att spara och öppna. Däreftre kopplas en metod på som körs efter att kommandot körts.
+I applikationen finns "Open"- och "Save"-funktionalitet som nyttjar något som heter Commands. Commands är ett sätt att hantera logik baserat på händelser, likt events men  istället för att skickas till alla som lyssnar så kör Commands en angiven metod. För Save och Open nyttjar vi inbyggda kommandon som ger oss kortkommandon "Ctrl+S" och "Ctrl+O" för att spara och öppna. Därefter kopplas en metod på som körs efter att kommandot körts.
 
 Ett Command har tre delar, "CanExecute" en metod som körs för att se om det går att utföra kommandot, "Execute" Själva händelsen, slutligen anropas "Executed" där vi kan utföra operationer efter att ett kommando utförts.
 
