@@ -142,7 +142,7 @@ Hint: Kolla upp Console.KeyAvailable och Thread.Sleep()
     ```################```</br>
 
  25. Skriv en ny klass som motsvarar en bil. Den ska ha privata fields för modell, pris och färg. Skapa publika properties för att hämta eller ändra värdet på varje field.
-
+   
 Skriv en konstruktor till bilklassen som inte tar några parametrar. Skriv en till konstruktor som tar en parameter för varje property som klassen har. Hur kan man styra vilken konstruktor som anropas när man skapar ett objekt av klassen?
 
 Skriv en metod till bilklassen med namnet HalfPrice. När den anropas ska priset på bilen sänkas till hälften.
@@ -166,3 +166,50 @@ Ex2. p.Name = “Per Lind”; // => p.FirstName == “Per”, p.LastName == “L
     Dessutom ska det finnas en statisk metod på klassen som tar två enum (sten, sax, påse) och returnerar en ny enum (win, lose, draw) som säger om den första parametern man skickar in vinner över den andra (eller om det blir lika).
 
     Hint: Använd Console.CursorLeft och Console.CursorTop. Spara den tidigare positionen innan du ändrar; gör uppdateringen, och hoppa tillbaks.
+31.	Skriv metod: void ConvertDegrees(float Celsius, out float Fahrenheit, out float Kelvin)
+Metoden ska ta antal grader i Celsius in, och man ska få ut motsvarigheten i Fahrenheit och Kelvin i out-parametrarna. Ta input från användaren i Celsius, använd metoden och skriv ut resultat.
+
+32.	Lägg till en statisk metod på klassen i uppgift 29. Metoden ska ta en bil som inparameter och returnera en array med 10 bilar i samma färg, men med olika längd.
+
+33.	Skriv en metod som använder en ref int som in-parameter och som multiplicerar referensen med sig själv. Den ska även returnera parametern konverterad till en sträng. Anropa metoden och skriv sedan ut både den inskickade (uppdaterade) variabeln, och det returnerade värdet.
+
+34.	Uppdatera konstruktorn på klassen i uppgift 29 (och 32) så att bilen även får en random hastighet (mellan 60 och 240 km/h). Skriv en metod DriveForOneHour() som uppdaterar en property Distance med total körsträcka. Distance ska alltså initieras på 0, och sedan öka för varje gång man anropar DriveForOneHour(). Lägg sedan till en metod GetGraph() som returnerar en string på 20 tecken som representerar en körsträcka på 1000 mil och visar bilens position enligt exempel: “|------x-----------|”.
+(‘x’ är alltså bilens position mellan start och mål (1000 mil). 
+
+    Skriv sedan ett program som simulerar att 10 bilar åker 1000 mil i olika hastighet där varje bils position, samt dess exakta körda distans (i text) uppdateras en gång i sekunden. (En sekund i simuleringen motsvarar alltså en timma i verkligheten).
+hint: Thread.Sleep(1000);
+
+    Ex: Bil A: |------x-----------|   3420 km
+      Bil B: |-------------x----|   8293 km
+	.. etc ..
+
+    Extra utmaning: Lägg till så varje ‘x’ ritas ut i respektive bils färg; och så man ser hur lång tid som gått sedan start; samt eventuella andra förbättringar du kan komma på.
+
+35.	Skapa en klass som har en privat konstruktor, och en statisk metod som anropar konstruktorn och returnerar en ny instans av objektet.
+
+    OM ni är klara; lägg till en public readonly int (field) i klassen som får ett random tal 0-100 för varje objekt som instansieras.
+
+36.	Skapa en ny klass, och sedan ytterligare 2 klasser som ärver av den första.
+Basklassen ska ha minst en metod och en property som de andra klasserna ärver.
+Gör en ny instans av varje typ och anropa metoden på dem.
+
+    Skapa en array av samma typ som basklassen, och lagra instanserna
+(de du skapade ovan) i arrayen. Loopa igenom array med foreach och anropa metod
+på varje objekt.
+
+    Använd 'is'-operatorn i loopen och skriv ut olika saker på console beroende
+på typ.
+
+37.	Skapa en Stack<string>. Gör en loop där användaren matar in text. Pusha varje inmatad sträng på stacken. När användaren trycker enter utan att skriva något, avsluta loopen och skriv ut alla strängar i omvänd ordning genom att Pop:a dem från stacken.
+
+38.	Skapa en klass “Person” som har minst 5 properties som lagrar data om en person (t.ex. namn, telefonnr, etc). Skapa en Dictionary<string, Person> med minst 5 key-value-pairs. Nyckeln ska vara personnummer. Skriv ett program som ber användaren skriva in ett personnummer, och lista all info om den personen.
+39.	Skriv en loop som upprepade gånger tar input från användaren. Varje gång användaren skriver något som inte är en siffra så läggs input i en kö. Om användaren matar in en siffra (t.ex 3) så skriv ut lika många (3) strängar från kön, i den ordning de matats in. Om man skriver en högre siffra än vad det finns objekt i kön så skriv ut alla som finns i kön. 
+
+    Ex: man matar in först “boll”, sedan “anka”, “bil”, och “fjäril”. Om man sedan matar in “2” så skrivs “boll” och “anka” ut, matar man sedan in “katt” och “1” så skrivs “bil” ut.
+
+40.	Utgå från uppgift 38, och skriv ett program med en meny:
+    1. Lägg till person i registret
+    2. Sök person i registret
+    3. Avsluta programmet
+
+    Om man väljer 1 ska man bli tillfrågad att mata in de olika uppgifterna för en ny person. Om man väljer 2 ska man kunna skriva ett personnummer och få ut informationen. Efter varje val kommer man tillbaks till menyn, tills man väljer avsluta.
