@@ -24,4 +24,5 @@ Kursrepo för Programmering C# .NET22.
 [Övningsuppgifter](./assets/%C3%B6vningar.md)
 
 ## Labbar
-[Labb 1](./assets/Labb%201.md)
+* [Labb 1](./assets/Labb%201.md)
+* [Labb 2](./assets/Labb%202.md)
