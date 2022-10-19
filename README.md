@@ -26,3 +26,10 @@ Kursrepo för Programmering C# .NET22.
 ## Labbar
 * [Labb 1](./assets/Labb%201.md)
 * [Labb 2](./assets/Labb%202.md)
+
+## Övriga resurser
+* Guide för [private repo](./assets/SetupPrivateRep.md)
+
+## Repon från genomgångar
+* [OOP](https://github.com/niklas-hjelm/DemoPoly)
+* [OOP](https://github.com/niklas-hjelm/DemoPoly)
